@@ -21,7 +21,7 @@ public:
     int splitArray(vector<int>& nums, int k) {
         int first = *max_element(nums.begin(), nums.end());
         int last = accumulate(nums.begin(), nums.end(), 0);
-        int ans = last; // Initialize ans to the maximum possible value
+        int ans = last; 
 
         while (first <= last) {
             int mid = first + (last - first) / 2;
