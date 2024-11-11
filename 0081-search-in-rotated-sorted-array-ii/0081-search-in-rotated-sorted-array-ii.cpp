@@ -16,6 +16,8 @@ public:
         }
             return -1;
     }
+
+
     bool search(vector<int>& nums, int target) {
         int low =0,high=nums.size()-1;
         while(low<high && nums[low]==nums[low+1])low++;
